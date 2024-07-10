@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="magmedia.jpeg">
+    <title>Magmedia</title>
+    <style>@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+        body{
+            padding: 0;
+            margin: 0;
+            color: black;
+            background-color: white;
+            font-family: "PT Serif", serif;
+        }
+        a{
+            color: white;
+        }
+        button{
+            background-color: rgb(204, 255, 51);
+            color: white;
+            cursor: pointer;
+        }
+        button:hover{
+            color: rgb(204, 255, 51);
+            background-color: beige;
+            cursor: pointer;
+            transition: 1s;
+        }
+        .intro{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0;
+            padding-bottom: 20px;
+        }
+        .logo{
+            width: 20%;
+        }
+        .intro-text{
+            margin-right: 500px;
+            margin-top: 100px;
+        }
+        .vision{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0;
+            width: 50%;
+            margin-left: 20px;
+            text-align: center;
+        }
+        .vision h3{
+            font-size: 30px;
+        }
+        .vision p{
+            font-size: 20px;
+            text-align: justify;
+        }
+        .offer h3{
+            font-size: 30px;
+        }
+        .offer{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0;
+            margin-right: 300px;
+            text-align: center;
+        }
+        .offer li{
+            font-size: 20px;
+            text-align: justify;
+        }
+        .container{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .team{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0;
+            padding-top: 30px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+        }
+        .team-images div {
+            text-align: center; /* Centers text below each image */
+        }
+        .team-images h5{
+            font-size: 20px;
+        }
+        .team-images h6{
+            font-size: 15px;
+        /* }
+        .team-images .agent {
+            grid-column: 1; /* Places the agent under the first column */
+        }
+        .team-text{
+            margin-right: 50px;
+            text-align: center;
+            width: 50%;
+        }
+        .team-text h3{
+            font-size: 50px;    
+        }
+        .team-text p{
+            font-size: 25px;
+            text-align: justify;
+        }
+        .call {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .end{
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 20px;
+        }
+        .class-text{
+            width: 50%;
+            padding-left: 20px;
+        }
+        .class-text h3{
+            font-size: 30px;
+        }
+        .class-text h2{
+            font-size: 30px;
+        }
+        .class-text p{
+            font-size: 20px;
+        }
+        .why-call{
+            width: 50%;
+            padding-left: 20px;
+        }
+        .why-call h3{
+            font-size: 30px;
+        }
+        .why-call li{
+            font-size: 20px;
+        }
+        .intro{
+            background-color: rgb(0, 23, 31);
+        }
+        .intro p{
+            color: white;
+            font-size: 20px;
+        }
+        .contact{
+            text-align: center;
+            font-size: 20px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-left: 50px;
+            padding-right: 50px;
+            border: none;
+            border-radius: 40px;
+        }
+        h4{
+            color: rgb(255, 166, 43);
+            font-size: 30px;
+        }
+        .header{
+            color: whitesmoke;
+            font-size: 50px;
+        }
+        .vh{
+            color: rgb(0, 23, 31) ;
+        }
+        .vision p{
+            color: rgb(112, 121, 140);
+        }
+        h3{
+            color: red;
+        }
+        .oh{
+            color: rgb(0, 23, 31) ;
+        }
+        .offer li{
+            color: rgb(112, 121, 140);
+        }
+        .team{
+            background-color: rgb(0, 23, 31);
+        }
+        .team img{
+            border-radius: 100px;
+        }
+        .team h5{
+            color: whitesmoke;
+        }
+        .team h6{
+            color: rgb(255, 166, 43); 
+        }
+        .team p{
+            color: whitesmoke;
+        }
+        .th{
+            color: rgb(255, 166, 43);
+        }
+        .ch{
+            color: rgb(0, 23, 31);
+        }
+        .call p{
+            color: rgb(112, 121, 140);
+        }
+        .fch{
+            color: rgb(255, 166, 43)
+        }
+        .why-call h3{
+            color: rgb(0, 23, 31);
+        }
+        .why-call li{
+            color: rgb(112, 121, 140);
+        }
+        .end{
+            background-color: rgb(0, 23, 31); 
+            margin-bottom: 0;
+        }
+        .end p{
+            color: whitesmoke;
+        }</style>
+</head>
+<body>
+    <div class="intro">
+        <div class="logo"><img src="magmedia-removebg-preview.png" height="200px"></div>
+        <div class="intro-text">
+            <h3 class="header">A Digital Marketing Company</h3>
+            <h4>We help Businesses to produce large amount of ROI through Digital Marketing & Websites</h4>
+            <p>Don't have a Website? No worries we'll do that for you</p>
+            <p>Stop wasting your time on weak and ineffective ad campaings</p>
+            <p>It's time to level up your business and make your sales go sky rocket!</p>
+            <button class="contact">Speak to our team today<br>email@gmail.com<br>+9230001787</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="vision">
+            <div class="vision-text">
+                <h3 class="vh">OUR VISION</h3>
+                <p>As we all know, we are living in a Modern age where every thing is on social media and online. Here at MAG Media, we work with Businesses that want to produce millions of dollars through Ads and Digital Marketing. We create websites for businesses to help them make millions of dollars through websites. We help existing and new Businesses grow via social media and Ads. Our goal is to help businesses to get most out of their product through Digital Marketing.</p>
+                <button class="contact">Speak to our team today<br>email@gmail.com<br>+9230001787</button>
+            </div>
+        </div>
+        <div class="offer">
+            <div class="offer-text">
+                <h3 class="oh">What we offer</h3>
+                <ul class="items">
+                    <li>SEO</li>
+                    <li>Social Media Ads</li>
+                    <li>Social Media Handling</li>
+                    <li>Website Development</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="team">
+        <div class="team-images">
+            <div class="abdul">
+                <img src="abdul.jpeg" alt="abdulrehman" height="150px">
+                <h5>Abdulrehman Goraya</h5>
+                <h6>Founder</h6>
+            </div>
+            <div class="umair">
+                <img src="umair.jpeg" alt="umair" height="150px">
+                <h5>Umair Khalid</h5>
+                <h6>Head of Staff</h6>
+            </div>
+            <!-- <div class="agent">
+                <img src="abdul.jpeg" alt="agent" height="150px">
+                <h5>Agent</h5>
+                <h6>Cheif Marketing Officer</h6>
+            </div> -->
+        </div>
+        <div class="team-text">
+            <h3 class="th">Meet our A-team</h3>
+            <p>Founded by Abdulrehman Goraya who gathered the team to build this company.</p>
+            <p>As a client the first person who is going to interact with you is Agent. He will set you up a meeting with Abdulrehman and after the contract we will start working on your project in the supervision of our head Umair.</p>
+            <p>Our team will start working on your project.</p>
+            <p><b>You can directly setup meetings with Abdulrehman during working days to talk about the progress of your project.</b></p>
+        </div>
+    </div>
+    <div class="call">
+        <div class="class-text">
+            <h3 class="ch">Schedual your call with Agent</h3>
+            <h2 class="fch">Free 10 minute demo call</h2>
+            <p>By the end of this call you will get an idea what we are up to and how we can help you grow your business. After that you can schedual a meeting with Abdulrehman where he will explain the idea in detail and will make you an offer.</p>
+        </div>
+        <div class="why-call">
+            <h3>Why you should call us?</h3>
+            <ul class="reason">
+                <li>If you have a offline business and want to make it <b>online aswell</b></li>
+                <li>If you don't have a website and want someone to <b>build a website for you</b></li>
+                <li>If you want to <b>get your business recognized by mass audience</b></li>
+                <li>If you want to <b>attract global clients</b></li>
+                <li>If you want to <b>get clients through digital ads</b></li>
+                <li>If you want <b>a professional team to handle your social media accounts</b></li>
+            </ul>
+        </div>
+    </div>
+    <div class="end">
+        <div class="end-text">
+            <button class="contact">Speak to our team today<br>email@gmail.com<br>+9230001787</button>
+            <p>Follow us on instagram</p>
+            <a href="https://www.instagram.com/wearemagmedia?igsh=YWN1MGc4ZGJscjU%3D&utm_source=qr">@wearemagmedia</a>
+            <p>All rights reserved</p>
+        </div>
+    </div>
+</body>
+</html>
